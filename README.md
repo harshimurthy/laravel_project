@@ -6,5 +6,7 @@ All about Laravel
 MVC architecture
 
 
-git commit --amend --author "harshithachidanand <harshithac94@gmail.com>" --no-edit && \
-git rebase --continue
+##Path
+
++ Routes: app> http> routes.php
++ Views: resources> views >vendor>
