@@ -25,6 +25,7 @@ Route::get('/', function () {
 http://localhost:8000/about
 Even '/about' works in the below statement
 */
+
 Route::get('about',function() 
 {
 	//return 'You clicked on About';
@@ -32,6 +33,17 @@ Route::get('about',function()
 	/* Open pages folder in views and open about.blade.php
 	Even 'pages.about' works */
 	return view('pages/about');
+});
+
+Route::get('/',function()
+{
+	$people= ['Taylor','Matt', 'Jeffrey'];
+	/* 
+	load a view called welcome and pass the variable people
+	There are different ways to write this. Check synonyms of readme
+	But the following is the preferred appraoch*/
+	return view('welcome',compact('people'));
+
 });
 
 
