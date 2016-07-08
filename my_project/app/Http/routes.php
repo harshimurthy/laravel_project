@@ -46,4 +46,14 @@ Route::get('/',function()
 
 });
 
+/*
+	Using controllers
+	Pages controller is the name of of the file in controller(app>Http>Controllers)
+	home is the method name
+	On going to localhost:8000/contact, the contents in home methos are displayed
+*/
+Route::get('contact','PagesController@home');
+
+Route::get('products','PagesController@products');
+
 
