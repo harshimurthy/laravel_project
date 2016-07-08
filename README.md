@@ -37,3 +37,16 @@ MVC architecture
 	+ return view('welcome')->withPeople($people);
 	+ return view('welcome',[ ]);
 	+ return View::make();
+
+
+## Details
+	
+###Generic CSS
+	+ Create a generic html file, i.e,. Layout.blade.php
+		+ Have @yield(‘content’) included in the page wherever the content has to be replaced
+
+	+ When you create a new page, say, about.blade.php : include these
+		+ @extends(‘layout’) # file you want to extend from
+		+ @section(‘content’) # include whatever new you want inside this
+		+@stop # stops
+
