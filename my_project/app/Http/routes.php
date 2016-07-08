@@ -27,7 +27,11 @@ Even '/about' works in the below statement
 */
 Route::get('about',function() 
 {
-	return 'You clicked on About';
+	//return 'You clicked on About';
+
+	/* Open pages folder in views and open about.blade.php
+	Even 'pages.about' works */
+	return view('pages/about');
 });
 
 
