@@ -56,4 +56,9 @@ Route::get('contact','PagesController@home');
 
 Route::get('products','PagesController@products');
 
+//To fetch all cards
+Route::get('cards','CardsController@index');
+
+?>
+
 
